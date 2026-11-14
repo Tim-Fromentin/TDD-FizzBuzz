@@ -32,9 +32,11 @@ class FizzBuzzTest {
 
         String resultForFive = fizzBuz.say(5);
         String resultForTen = fizzBuz.say(10);
+        String resultForTwenty = fizzBuz.say(20);
 
         assertThat(resultForFive).isEqualTo("Buzz");
         assertThat(resultForTen).isEqualTo("Buzz");
+        assertThat(resultForTwenty).isEqualTo("Buzz");
     }
 
     @Test
