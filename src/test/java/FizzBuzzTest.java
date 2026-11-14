@@ -41,7 +41,9 @@ class FizzBuzzTest {
         FizzBuzz fizzBuz = new FizzBuzz();
 
         String resultForFifteen = fizzBuz.say(15);
+        String resultForThirty = fizzBuz.say(30);
 
         assertThat(resultForFifteen).isEqualTo("FizzBuzz");
+        assertThat(resultForThirty).isEqualTo("FizzBuzz");
     }
 }
