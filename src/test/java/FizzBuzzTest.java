@@ -30,7 +30,9 @@ class FizzBuzzTest {
         FizzBuzz fizzBuz = new FizzBuzz();
 
         String resultForFive = fizzBuz.say(5);
+        String resultForTen = fizzBuz.say(10);
 
         assertThat(resultForFive).isEqualTo("Buzz");
+        assertThat(resultForTen).isEqualTo("Buzz");
     }
 }
