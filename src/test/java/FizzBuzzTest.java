@@ -3,13 +3,13 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class FizzBuzzTest {
-    private final FizzBuzz fizzBuz = new FizzBuzz();
+    private final FizzBuzz fizzBuzz = new FizzBuzz();
 
     @Test
     public void shouldReturnNumberAsText_whenNotMultipleOfThreeOrFive(){
 
-        String resultForOne = fizzBuz.say(1);
-        String resultForTwo = fizzBuz.say(2);
+        String resultForOne = fizzBuzz.say(1);
+        String resultForTwo = fizzBuzz.say(2);
 
         assertThat(resultForOne).isEqualTo("1");
         assertThat(resultForTwo).isEqualTo("2");
@@ -18,9 +18,9 @@ class FizzBuzzTest {
     @Test
     public void shouldReturnFizz_whenMultipleOfThree(){
 
-        String resultForThree = fizzBuz.say(3);
-        String resultForSix = fizzBuz.say(6);
-        String resultForNine = fizzBuz.say(9);
+        String resultForThree = fizzBuzz.say(3);
+        String resultForSix = fizzBuzz.say(6);
+        String resultForNine = fizzBuzz.say(9);
 
         assertThat(resultForThree).isEqualTo("Fizz");
         assertThat(resultForSix).isEqualTo("Fizz");
@@ -30,9 +30,9 @@ class FizzBuzzTest {
     @Test
     public void shouldReturnBuzz_whenMultipleOfFive(){
 
-        String resultForFive = fizzBuz.say(5);
-        String resultForTen = fizzBuz.say(10);
-        String resultForTwenty = fizzBuz.say(20);
+        String resultForFive = fizzBuzz.say(5);
+        String resultForTen = fizzBuzz.say(10);
+        String resultForTwenty = fizzBuzz.say(20);
 
         assertThat(resultForFive).isEqualTo("Buzz");
         assertThat(resultForTen).isEqualTo("Buzz");
@@ -42,9 +42,9 @@ class FizzBuzzTest {
     @Test
     public void shouldReturnFizzBuzz_whenMultipleOfThreeAndFive(){
 
-        String resultForFifteen = fizzBuz.say(15);
-        String resultForThirty = fizzBuz.say(30);
-        String resultForFortyFive = fizzBuz.say(45);
+        String resultForFifteen = fizzBuzz.say(15);
+        String resultForThirty = fizzBuzz.say(30);
+        String resultForFortyFive = fizzBuzz.say(45);
 
         assertThat(resultForFifteen).isEqualTo("FizzBuzz");
         assertThat(resultForThirty).isEqualTo("FizzBuzz");
