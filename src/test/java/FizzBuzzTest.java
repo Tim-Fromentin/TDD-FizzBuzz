@@ -44,8 +44,10 @@ class FizzBuzzTest {
 
         String resultForFifteen = fizzBuz.say(15);
         String resultForThirty = fizzBuz.say(30);
+        String resultForFortyFive = fizzBuz.say(45);
 
         assertThat(resultForFifteen).isEqualTo("FizzBuzz");
         assertThat(resultForThirty).isEqualTo("FizzBuzz");
+        assertThat(resultForFortyFive).isEqualTo("FizzBuzz");
     }
 }
