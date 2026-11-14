@@ -24,4 +24,13 @@ class FizzBuzzTest {
         assertThat(resultForThree).isEqualTo("Fizz");
         assertThat(resultForSix).isEqualTo("Fizz");
     }
+
+    @Test
+    public void shouldReturnBuzz_whenMultipleOfFive(){
+        FizzBuzz fizzBuz = new FizzBuzz();
+
+        String resultForFive = fizzBuz.say(5);
+
+        assertThat(resultForFive).isEqualTo("Buzz");
+    }
 }
