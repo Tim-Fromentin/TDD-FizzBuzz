@@ -20,9 +20,11 @@ class FizzBuzzTest {
 
         String resultForThree = fizzBuz.say(3);
         String resultForSix = fizzBuz.say(6);
+        String resultForNine = fizzBuz.say(9);
 
         assertThat(resultForThree).isEqualTo("Fizz");
         assertThat(resultForSix).isEqualTo("Fizz");
+        assertThat(resultForNine).isEqualTo("Fizz");
     }
 
     @Test
