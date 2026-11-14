@@ -19,7 +19,9 @@ class FizzBuzzTest {
         FizzBuzz fizzBuz = new FizzBuzz();
 
         String resultForThree = fizzBuz.say(3);
+        String resultForSix = fizzBuz.say(6);
 
         assertThat(resultForThree).isEqualTo("Fizz");
+        assertThat(resultForSix).isEqualTo("Fizz");
     }
 }
