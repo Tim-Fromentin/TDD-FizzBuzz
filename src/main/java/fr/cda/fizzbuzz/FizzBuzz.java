@@ -1,7 +1,9 @@
+package fr.cda.fizzbuzz;
+
 public class FizzBuzz {
     public String say(int number){
         if (number % 15 == 0){
-            return "FizzBuzz";
+            return "fr.cda.fizzbuzz.FizzBuzz";
         }
 
         if (number % 5 == 0){

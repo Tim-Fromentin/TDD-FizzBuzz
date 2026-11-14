@@ -1,6 +1,6 @@
-# FizzBuzz en TDD
+# fr.cda.fizzbuzz.FizzBuzz en TDD
 
-Kata FizzBuzz réalisé en **Test-Driven Development** (TDD), en Java avec JUnit et AssertJ.
+Kata fr.cda.fizzbuzz.FizzBuzz réalisé en **Test-Driven Development** (TDD), en Java avec JUnit et AssertJ.
 
 L'objectif n'est pas l'algorithme lui-même, qui est simple, mais la **démarche** : chaque ligne de code a été écrite pour faire passer un test, en suivant strictement le cycle rouge → vert → refacto.
 

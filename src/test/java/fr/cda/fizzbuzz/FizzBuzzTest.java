@@ -1,3 +1,5 @@
+package fr.cda.fizzbuzz;
+
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -46,8 +48,8 @@ class FizzBuzzTest {
         String resultForThirty = fizzBuzz.say(30);
         String resultForFortyFive = fizzBuzz.say(45);
 
-        assertThat(resultForFifteen).isEqualTo("FizzBuzz");
-        assertThat(resultForThirty).isEqualTo("FizzBuzz");
-        assertThat(resultForFortyFive).isEqualTo("FizzBuzz");
+        assertThat(resultForFifteen).isEqualTo("fr.cda.fizzbuzz.FizzBuzz");
+        assertThat(resultForThirty).isEqualTo("fr.cda.fizzbuzz.FizzBuzz");
+        assertThat(resultForFortyFive).isEqualTo("fr.cda.fizzbuzz.FizzBuzz");
     }
 }
