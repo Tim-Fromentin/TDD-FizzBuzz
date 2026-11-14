@@ -6,7 +6,7 @@ class FizzBuzzTest {
     private final FizzBuzz fizzBuzz = new FizzBuzz();
 
     @Test
-    public void shouldReturnNumberAsText_whenNotMultipleOfThreeOrFive(){
+    void shouldReturnNumberAsText_whenNotMultipleOfThreeOrFive(){
 
         String resultForOne = fizzBuzz.say(1);
         String resultForTwo = fizzBuzz.say(2);
@@ -16,7 +16,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    public void shouldReturnFizz_whenMultipleOfThree(){
+    void shouldReturnFizz_whenMultipleOfThree(){
 
         String resultForThree = fizzBuzz.say(3);
         String resultForSix = fizzBuzz.say(6);
@@ -28,7 +28,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    public void shouldReturnBuzz_whenMultipleOfFive(){
+    void shouldReturnBuzz_whenMultipleOfFive(){
 
         String resultForFive = fizzBuzz.say(5);
         String resultForTen = fizzBuzz.say(10);
@@ -40,7 +40,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    public void shouldReturnFizzBuzz_whenMultipleOfThreeAndFive(){
+    void shouldReturnFizzBuzz_whenMultipleOfThreeAndFive(){
 
         String resultForFifteen = fizzBuzz.say(15);
         String resultForThirty = fizzBuzz.say(30);
