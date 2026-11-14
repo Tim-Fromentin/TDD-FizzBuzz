@@ -3,9 +3,10 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class FizzBuzzTest {
+    private final FizzBuzz fizzBuz = new FizzBuzz();
+
     @Test
     public void shouldReturnNumberAsText_whenNotMultipleOfThreeOrFive(){
-        FizzBuzz fizzBuz = new FizzBuzz();
 
         String resultForOne = fizzBuz.say(1);
         String resultForTwo = fizzBuz.say(2);
@@ -16,7 +17,6 @@ class FizzBuzzTest {
 
     @Test
     public void shouldReturnFizz_whenMultipleOfThree(){
-        FizzBuzz fizzBuz = new FizzBuzz();
 
         String resultForThree = fizzBuz.say(3);
         String resultForSix = fizzBuz.say(6);
@@ -27,7 +27,6 @@ class FizzBuzzTest {
 
     @Test
     public void shouldReturnBuzz_whenMultipleOfFive(){
-        FizzBuzz fizzBuz = new FizzBuzz();
 
         String resultForFive = fizzBuz.say(5);
         String resultForTen = fizzBuz.say(10);
@@ -38,7 +37,6 @@ class FizzBuzzTest {
 
     @Test
     public void shouldReturnFizzBuzz_whenMultipleOfThreeAndFive(){
-        FizzBuzz fizzBuz = new FizzBuzz();
 
         String resultForFifteen = fizzBuz.say(15);
         String resultForThirty = fizzBuz.say(30);
